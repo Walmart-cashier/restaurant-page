@@ -113,3 +113,56 @@ nav ul li:hover{
 .jumbotron button:hover{
     transform: scale(1.1);
 }
+
+.miniJumbotron{
+    padding: 1rem;
+   background-color: rgb(153, 18, 45);
+   text-align: center;
+   color:white;
+   cursor: pointer;
+}
+
+.miniJumbotron h2{
+    margin: 0;
+    font-size: 3.1rem;
+    font-weight: 900;
+    text-shadow: 1px 2px lightgray;
+}
+.miniJumbotron p{
+font-size: 1.4rem;
+}
+footer{
+    padding: 10vh 20vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer h6{
+    font-size: 1.4rem;
+    padding: .3rem;
+    border-bottom: 1px solid white;
+    transition-property: color;
+    transition-duration: 2s;
+}
+footer p{
+    padding: .5rem;
+    transition-property: color;
+    transition-duration: 1s;
+}
+footer h6,footer p{
+    margin: 0;
+    cursor: pointer;
+}
+footer p:hover,footer h6:hover{
+    color: crimson;
+}
+
+.copyright{
+    background-color: black;
+    color: white;
+    padding: 0 20vw;
+    font-size: .9rem;
+    letter-spacing: .2rem;
+}
