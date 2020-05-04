@@ -1,7 +1,8 @@
-import {loadMenu,red} from './menu';
 
-const initialLoad = function(){
+const loadMenu=function(){
     const mainContentDiv = document.querySelector('#main');
+    mainContentDiv.innerHTML="";
+    /*fixed contents*/
     const sectionContactInfo = document.createElement('section');
     sectionContactInfo.classList.add('contactInfo');
     const sectionContactInfo_p=document.createElement('p');
@@ -28,29 +29,26 @@ const initialLoad = function(){
     nav.appendChild(nav_ul);
     mainContentDiv.appendChild(nav);
 
-    const sectionJumbotron=document.createElement('section');
-    sectionJumbotron.classList.add('jumbotron');
-    const sectionJumbotron_h3_arr=['Our Passion','Your Burger'];
-    sectionJumbotron_h3_arr.forEach((item)=>{
-        let sectionJumbotron_h3=document.createElement('h3');
-        sectionJumbotron_h3.textContent=item;
-        sectionJumbotron.appendChild(sectionJumbotron_h3);
-    })
-    const sectionJumbotron_button=document.createElement('button');
-    sectionJumbotron_button.textContent='Order Now';
-    sectionJumbotron.appendChild(sectionJumbotron_button);
-    mainContentDiv.appendChild(sectionJumbotron);
+    /*menu contents*/
 
-    const sectionMiniJumbotron=document.createElement('section');
-    sectionMiniJumbotron.classList.add('miniJumbotron');
-    const sectionMiniJumbotron_h2=document.createElement('h2');
-    sectionMiniJumbotron_h2.textContent='FIND YOUR CRIMSON BURGERS';
-    const sectionMiniJumbotron_p=document.createElement('p');
-    sectionMiniJumbotron_p.textContent='ORDER ONLINE AT SELECT LOCATIONS';
-    sectionMiniJumbotron.appendChild(sectionMiniJumbotron_h2);
-    sectionMiniJumbotron.appendChild(sectionMiniJumbotron_p);
-    mainContentDiv.appendChild(sectionMiniJumbotron);
+    const section_menu=document.createElement('section');
+    section_menu.classList.add('menu');
 
+    const section_menu_arr=['shakes','burgers','starters','salads','kidsmeal','desserts'];
+    section_menu_arr.forEach((item)=>{
+        let section_submenu=document.createElement('section');
+        section_submenu.classList.add('menu_'+item)
+        let section_submenu_h3=document.createElement('h3');
+        section_submenu_h3.textContent=item;
+        let section_submenu_button=document.createElement('button');
+        section_submenu_button.textContent='explore';
+        section_submenu.appendChild(section_submenu_h3);
+        section_submenu.appendChild(section_submenu_button);
+        section_menu.appendChild(section_submenu);
+    });
+    mainContentDiv.appendChild(section_menu);
+
+    /*fixed contents*/
     const footer=document.createElement('footer');
     const footer_obj={
         section1:['FYI','News & Press'],
@@ -76,13 +74,6 @@ const initialLoad = function(){
     copyrightDiv.classList.add('copyright')
     copyrightDiv.textContent='Crimson Burgers &copy; 2020';
     mainContentDiv.appendChild(copyrightDiv);
-
 }
 
-const navEvents=function(){
-    const nav_menu_button=document.querySelector('#nav_menu');
-    nav_menu_button.addEventListener('click',loadMenu);
-
-}
-
-export {initialLoad,navEvents}
+export {loadMenu}

@@ -1,3 +1,4 @@
+/*CSS FOR INITIAL OR VISIT PAGE */
 *{
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
@@ -78,7 +79,7 @@ nav ul li:hover{
 }
 
 .jumbotron{
-    background-image: url('/src/background.jpg');
+    background-image: url('/src/images/background.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
