@@ -1,3 +1,6 @@
 
+import { initialLoad } from './initialpage';
 
-import somehting from '/src/intialpage.js';
+initialLoad();
+
+console.log('hi');
