@@ -58,7 +58,7 @@ const initialLoad = function(){
     for(let element in footer_obj){
         let footer_section=document.createElement('section');
         let footer_section_h6=document.createElement('h6');
-        let [first,...rest]=element;
+        let [first,...rest]=footer_obj[element];
         footer_section_h6.textContent=first;
         footer_section.appendChild(footer_section_h6);
         rest.forEach((item)=>{
