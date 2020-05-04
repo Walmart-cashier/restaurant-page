@@ -120,6 +120,7 @@ nav ul li:hover{
    text-align: center;
    color:white;
    cursor: pointer;
+   height: 20vh;
 }
 
 .miniJumbotron h2{
