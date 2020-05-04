@@ -1,2 +1,3 @@
 
-console.log('hi');
+
+import somehting from '/src/intialpage.js';

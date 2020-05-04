@@ -155,7 +155,7 @@ footer h6,footer p{
     margin: 0;
     cursor: pointer;
 }
-footer p:hover,footer h6:hover{
+footer p:hover{
     color: crimson;
 }
 
