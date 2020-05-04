@@ -1,6 +1,4 @@
 
-import { initialLoad } from './initialpage';
+import {initialLoad} from './initialpage';
 
 initialLoad();
-
-console.log('hi');

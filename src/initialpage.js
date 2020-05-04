@@ -1,8 +1,6 @@
 
-const intialLoad = function(){
-    console.log('im intial load');
-    const mainContentDiv = document.querySelector('.main');
-
+const initialLoad = function(){
+    const mainContentDiv = document.querySelector('#main');
     const sectionContactInfo = document.createElement('section');
     sectionContactInfo.classList.add('contactInfo');
     const sectionContactInfo_p=document.createElement('p');
@@ -42,6 +40,7 @@ const intialLoad = function(){
     mainContentDiv.appendChild(sectionJumbotron);
 
     const sectionMiniJumbotron=document.createElement('section');
+    sectionMiniJumbotron.classList.add('miniJumbotron');
     const sectionMiniJumbotron_h2=document.createElement('h2');
     sectionMiniJumbotron_h2.textContent='FIND YOUR CRIMSON BURGERS';
     const sectionMiniJumbotron_p=document.createElement('p');
@@ -72,9 +71,10 @@ const intialLoad = function(){
     mainContentDiv.appendChild(footer);
 
     const copyrightDiv=document.createElement('div');
+    copyrightDiv.classList.add('copyright')
     copyrightDiv.textContent='Crimson Burgers &copy; 2020';
     mainContentDiv.appendChild(copyrightDiv);
 
 }
 
-export default intialLoad
+export {initialLoad}
