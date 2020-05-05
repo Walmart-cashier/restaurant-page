@@ -14,7 +14,7 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/images/read-table.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/read-table.jpg');
     background-size: 100% 100%;
     background-position:center;
     color: white;
@@ -38,7 +38,7 @@
     align-items: center;
     font-size: 3.7rem;
     text-transform: uppercase;
-    background-image: url(./images/read-burger.jpg);
+    background-image: url(../images/read-burger.jpg);
     background-size:cover;
     background-position:center;
     color:black;
