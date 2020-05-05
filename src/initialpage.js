@@ -1,5 +1,6 @@
 import {loadMenu} from './menu';
 import {visitMenu} from './visit';
+import {loadOrderonline} from './orderonline';
 
 const mainContentDiv = document.querySelector('#main');
 
@@ -88,10 +89,12 @@ const loadFooter=function(){
 const navEvents=function(){
     const nav_menu_button=document.querySelector('#nav_menu');
     nav_menu_button.addEventListener('click',loadMenu);
-    
+
     const nav_visit_button=document.querySelector('#nav_visit');
-    console.log(nav_visit_button);
     nav_visit_button.addEventListener('click',visitMenu);
+
+    const nav_orderOnline_button=document.querySelector('#nav_orderOnline');
+    nav_orderOnline_button.addEventListener('click',loadOrderonline);
 }
 
 export {mainContentDiv,loadVisit,loadHeader,loadFooter,navEvents}

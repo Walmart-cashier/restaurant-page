@@ -3,7 +3,6 @@ import { loadHeader,loadFooter,navEvents} from "./initialpage";
 const mainContentDiv = document.querySelector('#main');
 
 const loadMenu=function(){
-    console.log('onclicking menu i work');
     mainContentDiv.innerHTML="";
     loadHeader();
     /*menu contents*/
