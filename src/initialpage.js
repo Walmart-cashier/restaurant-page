@@ -1,7 +1,8 @@
-import {loadMenu,red} from './menu';
+import {loadMenu} from './menu';
 
-const initialLoad = function(){
-    const mainContentDiv = document.querySelector('#main');
+const mainContentDiv = document.querySelector('#main');
+
+const loadHeader = function(){
     const sectionContactInfo = document.createElement('section');
     sectionContactInfo.classList.add('contactInfo');
     const sectionContactInfo_p=document.createElement('p');
@@ -28,6 +29,9 @@ const initialLoad = function(){
     nav.appendChild(nav_ul);
     mainContentDiv.appendChild(nav);
 
+}
+
+const loadVisit=function(){
     const sectionJumbotron=document.createElement('section');
     sectionJumbotron.classList.add('jumbotron');
     const sectionJumbotron_h3_arr=['Our Passion','Your Burger'];
@@ -50,7 +54,9 @@ const initialLoad = function(){
     sectionMiniJumbotron.appendChild(sectionMiniJumbotron_h2);
     sectionMiniJumbotron.appendChild(sectionMiniJumbotron_p);
     mainContentDiv.appendChild(sectionMiniJumbotron);
+}
 
+const loadFooter=function(){
     const footer=document.createElement('footer');
     const footer_obj={
         section1:['FYI','News & Press'],
@@ -76,7 +82,6 @@ const initialLoad = function(){
     copyrightDiv.classList.add('copyright')
     copyrightDiv.textContent='Crimson Burgers &copy; 2020';
     mainContentDiv.appendChild(copyrightDiv);
-
 }
 
 const navEvents=function(){
@@ -85,4 +90,4 @@ const navEvents=function(){
 
 }
 
-export {initialLoad,navEvents}
+export {mainContentDiv,loadVisit,loadHeader,loadFooter,navEvents}

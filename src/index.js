@@ -1,6 +1,7 @@
 
-import {initialLoad, navEvents} from './initialpage';
-import {loadMenu,red} from './menu';
+import {mainContentDiv,loadVisit,loadHeader,loadFooter,navEvents} from './initialpage';
 
-initialLoad();
+loadHeader();
+loadVisit();
+loadFooter();
 navEvents();
