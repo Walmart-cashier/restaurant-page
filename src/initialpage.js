@@ -88,9 +88,10 @@ const loadFooter=function(){
 const navEvents=function(){
     const nav_menu_button=document.querySelector('#nav_menu');
     nav_menu_button.addEventListener('click',loadMenu);
-
+    
     const nav_visit_button=document.querySelector('#nav_visit');
-    nav_menu_button.addEventListener('click',visitMenu);
+    console.log(nav_visit_button);
+    nav_visit_button.addEventListener('click',visitMenu);
 }
 
 export {mainContentDiv,loadVisit,loadHeader,loadFooter,navEvents}
