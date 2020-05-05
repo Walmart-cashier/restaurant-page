@@ -1,6 +1,6 @@
 import {loadMenu} from './menu';
-import {visitMenu} from './visit';
 import {loadOrderonline} from './orderonline';
+import {loadRead} from './read';
 
 const mainContentDiv = document.querySelector('#main');
 
@@ -82,7 +82,7 @@ const loadFooter=function(){
 
     const copyrightDiv=document.createElement('div');
     copyrightDiv.classList.add('copyright')
-    copyrightDiv.textContent='Crimson Burgers &copy; 2020';
+    copyrightDiv.textContent='Crimson Burgers © 2020';
     mainContentDiv.appendChild(copyrightDiv);
 }
 
@@ -91,10 +91,19 @@ const navEvents=function(){
     nav_menu_button.addEventListener('click',loadMenu);
 
     const nav_visit_button=document.querySelector('#nav_visit');
-    nav_visit_button.addEventListener('click',visitMenu);
+    nav_visit_button.addEventListener('click',()=>{
+        mainContentDiv.textContent="";
+        loadHeader();
+        loadVisit();
+        loadFooter();
+        navEvents();
+    });
 
     const nav_orderOnline_button=document.querySelector('#nav_orderOnline');
     nav_orderOnline_button.addEventListener('click',loadOrderonline);
+
+    const nav_read_button=document.querySelector('#nav_read');
+    nav_read_button.addEventListener('click',loadRead)
 }
 
 export {mainContentDiv,loadVisit,loadHeader,loadFooter,navEvents}
