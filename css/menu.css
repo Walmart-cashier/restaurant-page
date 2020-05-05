@@ -23,27 +23,27 @@
 }
 
 .menu_shakes{
-    background-image:url(/src/images/shake-background.jpg);
+    background-image:url(./images/shake-background.jpg);
 }
 
 .menu_burgers{
-    background-image: url(/src/images/burger-background.jpg)
+    background-image: url(./images/burger-background.jpg)
 }
 
 .menu_starters{
-    background-image: url(/src/images/starters-background.jpg)
+    background-image: url(./images/starters-background.jpg)
 }
 
 .menu_salads{
-    background-image: url(/src/images/salads-background.jpg)
+    background-image: url(./images/salads-background.jpg)
 }
 
 .menu_kidsmeal{
-    background-image: url(/src/images/kidsmeal-background.jpg)
+    background-image: url(./images/kidsmeal-background.jpg)
 }
 
 .menu_desserts{
-    background-image: url(/src/images/desserts-background.jpg)
+    background-image: url(./images/desserts-background.jpg)
 }
 
 .menu button{
