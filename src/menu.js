@@ -24,6 +24,7 @@ const loadMenu=function(){
     mainContentDiv.appendChild(section_menu);
 
     loadFooter();
+    navEvents();
 }
 
 export {loadMenu}

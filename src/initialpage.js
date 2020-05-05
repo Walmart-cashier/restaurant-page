@@ -1,4 +1,5 @@
 import {loadMenu} from './menu';
+import {visitMenu} from './visit';
 
 const mainContentDiv = document.querySelector('#main');
 
@@ -88,6 +89,8 @@ const navEvents=function(){
     const nav_menu_button=document.querySelector('#nav_menu');
     nav_menu_button.addEventListener('click',loadMenu);
 
+    const nav_visit_button=document.querySelector('#nav_visit');
+    nav_menu_button.addEventListener('click',visitMenu);
 }
 
 export {mainContentDiv,loadVisit,loadHeader,loadFooter,navEvents}
